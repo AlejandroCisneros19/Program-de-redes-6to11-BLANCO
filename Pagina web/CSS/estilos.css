@@ -1,0 +1,67 @@
+
+/*FONDO*/
+body{
+    background-color: brown;
+}
+
+/*PANTALLA ADMIN Y REGISTRAR*/
+.table__titulo{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.table__titulo2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.columnas{
+    margin: 10px auto;
+    width: 250px;
+}
+
+table{
+    background-color: white;
+    text-align: center;
+    width: 50%;
+    border: solid 1px black;
+    margin:0 auto;
+}
+
+th,td{
+    border: solid 1px black;
+}
+
+/*BOTON CERRA SESION*/
+.boton{
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+/*PANTALLA INICIAR SESION*/
+.principal{
+    background: blanchedalmond;
+    border: 3px solid;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.texto{
+    color: white;
+}
+
+/*PANTALLA CLIENTE */
+.subirARCH{
+    color: white;
+    text-align: left;
+
+}
+

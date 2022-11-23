@@ -1,5 +1,5 @@
 <?php
-include("DatosSubidos.php");
+include("../BD/db.php");
 
 $id = $_GET['id'];
 $eliminar = "DELETE FROM archivos WHERE id='$id' "; 
@@ -10,7 +10,7 @@ $eliminar = "DELETE FROM archivos WHERE id='$id' ";
 $resultadoEliminar = mysqli_query($conexion, $eliminar);
 
 if ($resultadoEliminar){
-    header("Location: VentanaAdmin.php");
+    header("Location: ../VentanaAdmin.php");
 }else {
     echo "<script>alert('No se ha podido realizar la operacion')</script>"; 
 }
