@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-11-2022 a las 03:21:58
+-- Tiempo de generación: 24-11-2022 a las 15:49:15
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -76,6 +76,7 @@ CREATE TABLE `usuario` (
   `correo` varchar(255) NOT NULL,
   `usuario` varchar(255) NOT NULL,
   `clave` varchar(255) NOT NULL,
+  `TAGG` varchar(255) NOT NULL,
   `rol` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -83,12 +84,13 @@ CREATE TABLE `usuario` (
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`idusuario`, `nombre`, `correo`, `usuario`, `clave`, `rol`) VALUES
-(1, 'alejandro javier', 'aleecisneros19@gmail.com', 'alejandro', '123456', 1),
-(2, 'Aaron Florian', 'Aaron@gmail.com', 'Aaron', '123456', 2),
-(8, 'Santiago Nicolas', 'Santino@gmail.com', 'santiago', 'e10adc3949ba59abbe56e057f20f883e', 1),
-(9, 'Javier luca', 'Javier@gmail.com', 'Javiercito', 'e10adc3949ba59abbe56e057f20f883e', 2),
-(10, 'Ivan pajera', 'Ivan@gmail.com', 'Ivan', 'e10adc3949ba59abbe56e057f20f883e', 2);
+INSERT INTO `usuario` (`idusuario`, `nombre`, `correo`, `usuario`, `clave`, `TAGG`, `rol`) VALUES
+(1, 'alejandro javier', 'aleecisneros19@gmail.com', 'alejandro', '123456', '', 1),
+(2, 'Aaron Florian', 'Aaron@gmail.com', 'Aaron', '123456', '', 2),
+(8, 'Santiago Nicolas', 'Santino@gmail.com', 'santiago', 'e10adc3949ba59abbe56e057f20f883e', '', 1),
+(9, 'Javier luca', 'Javier@gmail.com', 'Javiercito', 'e10adc3949ba59abbe56e057f20f883e', '', 2),
+(10, 'Ivan pajera', 'Ivan@gmail.com', 'Ivan', 'e10adc3949ba59abbe56e057f20f883e', '', 2),
+(15, 'BLANQUITO', 'blanco@gmail.com', 'blanco profesor', 'e10adc3949ba59abbe56e057f20f883e', 'ukEe', 1);
 
 --
 -- Índices para tablas volcadas
@@ -121,7 +123,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de la tabla `archivos`
 --
 ALTER TABLE `archivos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT de la tabla `rol`
@@ -133,7 +135,7 @@ ALTER TABLE `rol`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `idusuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Restricciones para tablas volcadas
