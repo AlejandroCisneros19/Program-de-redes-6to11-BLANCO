@@ -5,7 +5,7 @@ include('../BD/db.php');
 $file_name= $_FILES["file"]["name"];
 $file_tmp = $_FILES["file"]["tmp_name"];
 $desc = $_POST["desc"];
-$route = "IMG/".$file_name;
+$route = "../IMG/".$file_name;
 
 
 move_uploaded_file($file_tmp, $route);
